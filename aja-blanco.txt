@@ -1,0 +1,124 @@
+https://codepen.io/ajablanco/pen/ZEYjBMm?editors=1100
+
+    1. What is Semantic HTML? 
+Semantic HTML provides meaning for the developers and also for disabilities.
+    2. What is HTML used for? 
+HTML is used to provide Structure to websites.
+    3. What is an attribute and where do we put it? 
+An attribute is a special flag right inside of our tags
+    4. What is the h1 tag used for? How many times should I use it on a page?
+It is typically used for the header title. Typically used once on a page.
+    5. Name two tags that have required attributes
+<a> and <img> both require attributes (href & src respectively)
+    6. What do we put in the head of our HTML document? 
+<header>
+    7. What is an id? 
+titles that only appear on a single element
+    8. What elements can I add an id to? 
+you can apply id's to all elements, but only once
+    9. How many times can I use the same id on a page? 
+only once
+    10. What is a class? 
+a class can apply to multiple elements
+    11. What elements can I add a class to? 
+all elements
+    12. How many times can I use the same class on a page? 
+multiple times
+    13. How do I get my link to open in a new tab?
+just add a target="_blank" attribute to your links 
+    14. What is the alt attribute used for? 
+it specifies an alternate text for an image, if the image cannot be displayed
+    15. How do I reference an id?
+#
+    16. What is the difference between a section and a div
+section lets the developer know that specific info belongs together... a div is a generic container. there can be multiple divs in a section
+    17. What is CSS used for? 
+CSS is used to style the page
+    18. How to we select an element? Example - every h2 on the page
+h2 {
+}
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+class is less specific than an id
+you would use a class to style multiple elements at a time
+you would use an id to style a specific element
+    20. How do we select classes in CSS?
+.class {
+}
+    21. How do we select a p element with a single class of “human””?
+p .human{
+}
+    22. What is a parent child selector? When would this be useful? 
+selects all elements that are a direct child of the specified element.
+it would be useful if you want to select all of the elements within a specific element.
+    23. How do you select all links within a div with the class of sidebar?
+div .sidebar{
+}
+    24. What is a pseudo selector?
+is a keyword added to a selector that lets you style a specific part of the selected element
+    25. What do we use the change the spacing between lines?
+line-height:
+    26. What do we use to change the spacing between letters?
+letter-spacing: px;
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+text-transform: uppercase;
+text-transform: lowercase;
+text-transform: capitalize;
+    28. How do I add a 1px border around my div that is dotted and black?
+div {
+   border: 1px dotted black;
+}
+    29. How do I select everything on the page?
+* 
+    30. How do I write a comment in CSS?
+/* comment */
+    31. How do I find out what file I am in, when I am using the command line? 
+pwd
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+rm <file>
+    34. Why should I use version control? 
+Version control is important for documents that undergo a lot of revision and redrafting and is particularly important for electronic documents because they can easily be changed by a number of different users.
+    35. How often should I commit to github?
+commit whenever you finish a step
+    36. What is the command we would use to push our repo up to github? 
+git push -u origin branch-name
+    37. Walk me through Lambda's git flow.
+1. fork
+2. add collaborator
+3. clone repo
+4. cd Folder
+5. git clone <link to repo>
+6. cd <repo name>
+7. git checkout -b "aja-blanco"
+8. git add .
+9. git commit -m "added codepen and answers"
+10. git push -u origin aja-blanco
+11. submit a pull request
+12. go to forked repo on GitHub
+13. click on branch:master
+14. click on base repository and change to your forked repo
+15. add TL to the reviewers and then submit pull request 
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+Block-level elements take up all of the available space within their parent container.
+Inline elements can exist within block-level elements. A paragraph would normally be a block-level element. A span would be an inline element and this could appear inside a paragraph.
+    2. What happens when an element is positioned absolutely? 
+an element that is absolutely positioned so other elements are positioned as if it did not exist. 
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+use a container (section or div) to allow an element to take up as much space as it needs while still allowing the width to be adjusted.
+    4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+block- <h1>, <p>, <div>
+inline- <span>, <a>, 
+inline-bloc- <nav>
+    5. In your own words, explain the box model. What is the fix for the box model? 
+the box model includes content, padding, border, margin, and can be adjusted
+fix:
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
